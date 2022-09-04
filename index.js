@@ -1,4 +1,4 @@
-const api_root="https://lsu4b4x3q2.execute-api.us-east-1.amazonaws.com/register/"
+const api_root="https://vuvd8oc033.execute-api.us-east-1.amazonaws.com/register"
 function loadTable(){
     const xhttp = new XMLHttpRequest();
     xhttp.open("GET",api_root + "users");
