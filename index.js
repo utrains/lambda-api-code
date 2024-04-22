@@ -1,4 +1,4 @@
-const api_root="https://lsu4b4x3q2.execute-api.us-east-1.amazonaws.com/register/"
+const api_root="https://fv2zao8asc.execute-api.us-west-1.amazonaws.com/register/"
 function loadTable(){
     const xhttp = new XMLHttpRequest();
     xhttp.open("GET",api_root + "users");
@@ -46,11 +46,11 @@ function userCreate(){
     const id = (Math.floor(Math.random() * 10001)).toString();
 
     const xhttp = new XMLHttpRequest();
-    const data= JSON.stringify({"fname": fname,"lname": lname,"username": username,"email": email,"avatar": "https://www.mecallapi.com/users/cat.png"})
+    const data= JSON.stringify({"fname": fname,"lname": lname,"username": username,"email": email,"avatar": "https://utrains.org/wp-content/uploads/elementor/thumbs/logo-no-slogan-q3ejn5iq6f68i6vg3fo4x7uaugcgqx6v2r0qpt5se8.png"})
     console.log(data);
     xhttp.open("POST",api_root + "user");
     xhttp.setRequestHeader("Content-Type","application/json;charset=UTF-8");
-    xhttp.send(JSON.stringify({"id":id , "fname": fname,"lname": lname,"username": username,"email": email,"avatar": "https://www.mecallapi.com/users/cat.png"}));
+    xhttp.send(JSON.stringify({"id":id , "fname": fname,"lname": lname,"username": username,"email": email,"avatar": "https://utrains.org/wp-content/uploads/elementor/thumbs/logo-no-slogan-q3ejn5iq6f68i6vg3fo4x7uaugcgqx6v2r0qpt5se8.png"}));
 
     xhttp.onreadystatechange = function(){
         if(this.readyState == 4&&this.status==200){
@@ -96,7 +96,7 @@ function userEdit(){
     const xhttp = new XMLHttpRequest();
     xhttp.open("PUT",api_root + "user");
     xhttp.setRequestHeader("Content-Type","application/json;charset=UTF-8");
-    xhttp.send(JSON.stringify({"id": id,"fname": fname,"lname": lname,"username":username,"email": email,"avatar": "https://www.mecallapi.com/users/cat.png"}));
+    xhttp.send(JSON.stringify({"id": id,"fname": fname,"lname": lname,"username":username,"email": email,"avatar": "https://utrains.org/wp-content/uploads/elementor/thumbs/logo-no-slogan-q3ejn5iq6f68i6vg3fo4x7uaugcgqx6v2r0qpt5se8.png"}));
    xhttp.onreadystatechange = function(){
       if(this.readyState == 4&&this.status==200){
            const objects=JSON.parse(this.responseText);
