@@ -1,4 +1,4 @@
-const api_root="https://fv2zao8asc.execute-api.us-west-1.amazonaws.com/register/"
+const api_root="https://adpnfuga4f.execute-api.us-west-2.amazonaws.com/register2/"
 function loadTable(){
     const xhttp = new XMLHttpRequest();
     xhttp.open("GET",api_root + "users");
@@ -46,11 +46,11 @@ function userCreate(){
     const id = (Math.floor(Math.random() * 10001)).toString();
 
     const xhttp = new XMLHttpRequest();
-    const data= JSON.stringify({"fname": fname,"lname": lname,"username": username,"email": email,"avatar": "https://utrains.org/wp-content/uploads/elementor/thumbs/logo-no-slogan-q3ejn5iq6f68i6vg3fo4x7uaugcgqx6v2r0qpt5se8.png"})
+    const data= JSON.stringify({"fname": fname,"lname": lname,"username": username,"email": email,"avatar": "https://utrains.org/assets/images/logo/logo-dark.png"})
     console.log(data);
     xhttp.open("POST",api_root + "user");
     xhttp.setRequestHeader("Content-Type","application/json;charset=UTF-8");
-    xhttp.send(JSON.stringify({"id":id , "fname": fname,"lname": lname,"username": username,"email": email,"avatar": "https://utrains.org/wp-content/uploads/elementor/thumbs/logo-no-slogan-q3ejn5iq6f68i6vg3fo4x7uaugcgqx6v2r0qpt5se8.png"}));
+    xhttp.send(JSON.stringify({"id":id , "fname": fname,"lname": lname,"username": username,"email": email,"avatar": "https://utrains.org/assets/images/logo/logo-dark.png"}));
 
     xhttp.onreadystatechange = function(){
         if(this.readyState == 4&&this.status==200){
