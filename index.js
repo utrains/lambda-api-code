@@ -96,7 +96,7 @@ function userEdit(){
     const xhttp = new XMLHttpRequest();
     xhttp.open("PUT",api_root + "user");
     xhttp.setRequestHeader("Content-Type","application/json;charset=UTF-8");
-    xhttp.send(JSON.stringify({"id": id,"fname": fname,"lname": lname,"username":username,"email": email,"avatar": "https://utrains.org/wp-content/uploads/elementor/thumbs/logo-no-slogan-q3ejn5iq6f68i6vg3fo4x7uaugcgqx6v2r0qpt5se8.png"}));
+    xhttp.send(JSON.stringify({"id": id,"fname": fname,"lname": lname,"username":username,"email": email,"avatar": "https://utrains.org/assets/images/logo/logo-dark.png"}));
    xhttp.onreadystatechange = function(){
       if(this.readyState == 4&&this.status==200){
            const objects=JSON.parse(this.responseText);
